@@ -1,0 +1,127 @@
+.page-main{
+    max-width: 100%;
+    display: flex;
+
+}
+
+
+/* zone gauche de l'ecran*/
+
+
+.left{
+    padding-left:9,93rem ;
+}
+.left .text .p {
+    max-width: 70%;
+   
+    margin: 1.3rem 0 1.65rem;
+    line-height: 1.65rem;
+}
+
+.heading{
+    padding-top: 2.25rem;
+}
+
+ h1 {
+    font-family: Montserrat;
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    color: black;
+    padding-top: 1.2rem;
+}
+
+p{
+    margin-block-end: 3rem;
+}
+
+.heading p {
+    line-height: 1.45rem;
+}
+caption{
+    text-align: center;
+}
+.competence{
+    padding-left: 4.25rem;
+}
+
+
+.exp{
+    color: #10c9c3 ;
+    padding-top: .35rem
+}
+
+.tableau{
+    width: 66rem;
+    height: 32rem;
+    border-bottom: none;
+}
+table {
+    border-collapse: collapse;
+    display: flex;
+  }
+
+table:hover{
+    box-shadow: 0 0 .95rem rgba(23,23,23,.1);
+}
+
+ td, th {
+    border-bottom: 2px  inset #787878;
+    width: 309px;
+  }
+
+.border-mid1, .border-mid, .bordere-end{
+    width: 309px;
+    height: 150px;
+}
+
+.end h1{
+    font-family: Montserrat;
+    font-size: 1.15rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: black;
+    padding-top: 1.32rem;
+}
+
+
+/* Hzone droite de l'ecran  */
+
+ aside {
+    width: 30%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    margin: 1.3rem 0 1.65rem;
+    line-height: 1.65rem;
+    font-style: italic;
+   
+
+}
+
+aside > p {
+    margin: .5rem;
+}
+aside  h3 {
+    color:  #10c9c3;
+}
+
+.contact{
+    column-fill: auto;
+}
+.title1 {
+    padding-top: 4.56rem; 
+}
+
+
+.aside-end{
+    max-height: 50%;
+    padding-top: 4.56rem;
+}
+
+.aside-end, .text{
+    padding-top: 2.31rem;
+}
+span img{
+font-size:1.62;
+}

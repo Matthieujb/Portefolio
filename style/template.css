@@ -1,0 +1,376 @@
+/*************/
+/*** RESET ***/
+/*************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    line-height: 1.25;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: inside;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*************/
+/*** FONTS ***/
+/*************/
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../style/font/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../style/font/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../style/font//montserrat-bold-webfont.woff2') format('woff2'),
+         url('../style/font/montserrat-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('../style/font/nunitosans-regular-webfont.woff2') format('woff2'),
+         url('../style/font/nunitosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('../style/font/Nunito_Sans/NunitoSans-Bold.ttf') format('ttf'),
+         url('../style/font/NunitoSans-ExtraBold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+/***********************/
+/*** TEMPLATE STYLES ***/
+/***********************/
+
+/*
+Noir : #171717 / R23 V23 B23
+Gris clair : #f5f5f5
+Gris : #787878 / R120 V120 B120
+Vert d'eau : #10c9c3
+Vert d'eau clair : #22e4de
+*/
+
+body {
+    font-family: Nunito;
+    color: #787878;
+    background-color: #f5f5f5;
+}
+
+/* Titles */
+
+.title1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 2.4rem; /* 38.4px */
+    color: #171717;
+}
+
+.title2 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.75rem; /* 28px */
+    color: #171717;
+}
+
+/* Links & buttons */
+
+a {
+    color: #171717;
+}
+a:hover {
+    color: #10c9c3;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #10c9c3;
+    padding: .9rem 1.6rem; /* 14.4px 25.6px */
+    font-family: Montserrat;
+    font-size: 0.85rem; /* 13.6px */
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.btn:hover{
+    background-color: #22e4de;
+    box-shadow: 0 0 .95rem rgba(23,23,23,.1);
+    color: white;
+}
+
+.btn-small {
+    display: inline-block;
+    background-color: #10c9c3;
+    padding: .7rem 1.15rem;
+    font-family: Montserrat;
+    font-size: 0.75rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1rem;
+}
+
+.btn-small:hover{
+    background-color: #22e4de;
+    box-shadow: 0 0 .8rem rgba(23,23,23,.1);
+    color: white;
+}
+
+/* Strong */
+
+strong {
+    font-weight: bold;
+    color: #171717;
+}
+
+/* Page menu */
+
+.page-menu{
+    background-color: white;
+    padding: 2.15rem 2rem; /* 34.4px 0 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-menu a{
+    text-decoration: none;
+    color: #171717;
+}
+
+.page-menu .home-link {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 1.5rem; /* 24px */
+}
+
+.page-menu .site-links {
+    margin-top: .35rem;
+}
+
+.page-menu .site-links a {
+    font-family: Montserrat;
+    font-size: 0.9rem; /* 14.4px */
+    text-transform: uppercase;
+    margin-left: 1.5rem;
+}
+
+.page-menu .site-links a:hover {
+    color: #22e4de;
+}
+
+.page-menu .site-links a.active {
+    color: #10c9c3;
+}
+
+/* Page main */
+
+.page-main {
+    padding: 0 2rem;
+}
+
+/* Page footer */
+
+.page-footer {
+    padding: 4rem 2rem;
+    background-color: #171717;
+    display: flex;
+}
+
+.page-footer .contact,
+.page-footer .menu {
+    flex:1;
+}
+
+.page-footer .menu .links {
+    columns: 2;
+}
+
+.page-footer h1,
+.page-footer h2,
+.page-footer a {
+    color: white;
+}
+
+.page-footer h1,
+.page-footer h2 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.page-footer h1 {
+    font-size: 1.5rem;
+}
+
+.page-footer h2 {
+    font-size: 1.25rem;
+}
+
+.page-footer a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: .25rem;
+}
+
+.page-footer a:hover{
+    color: #10c9c3;
+}
+
+.page-footer .contact a {
+    background-repeat: no-repeat;
+    background-position-y: center;
+    padding-left: 24px;
+}
+
+.page-footer .contact a:nth-of-type(1) {
+    background-image: url(../style/asset/pictos/mail.png);
+}
+.page-footer .contact a:nth-of-type(1):hover{
+    background-image: url(../style/asset/pictos/mail-hover.png);
+}
+
+.page-footer .contact a:nth-of-type(2) {
+    background-image: url(../style/asset/pictos/phone.png);
+}
+.page-footer .contact a:nth-of-type(2):hover{
+    background-image: url(../style/asset/pictos//phone-hover.png);
+}
+
+.page-footer .contact a:nth-of-type(3) {
+    background-image: url(../style/asset/pictos/linkedin.png);
+}
+.page-footer .contact a:nth-of-type(3):hover{
+    background-image: url(../style/asset/pictos/linkedin-hover.png);
+}
+
+.page-footer .contact a:nth-of-type(4) {
+    background-image: url(../style/asset/pictos/github.png);
+}
+.page-footer .contact a:nth-of-type(4):hover{
+    background-image: url(../style/asset/pictos/github-hover.png);
+}
+.page-footer strong {
+    color: inherit;
+}
+
+/* Page main (not home) */
+
+.page-main:not(.home) {
+    display: flex;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+/* Page content (not home) */
+
+.page-content{
+    flex:2;
+}
+
+.page-content h1,
+.page-content header {
+    margin-bottom: 2rem;
+}
+.page-content header p{
+    font-size: 1.15rem;
+}
+
+.page-content h2,
+.page-content p,
+.page-content table,
+.page-content form {
+    margin-bottom: 1.3rem;
+}
+
+/* Page aside */
+
+.page-aside{
+    flex:1;
+    padding-left: 3.15rem;
+    font-size: .95rem;
+}
+
+.page-aside h2{
+    margin-top: .6rem;
+    margin-bottom: 2.15rem;
+}
+
+.page-aside p{
+    line-height: 1.5;
+}
+
+.page-aside .infos p {
+    margin-bottom: .5rem;
+}
+
+.page-aside .infos a:first-of-type {
+    margin-bottom: .5rem;
+}
+
+.page-aside .projects h2 {
+    margin-top: 2.5rem;
+}
+
+.page-aside .projects h3 {
+    color: #10c9c3;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.page-aside .projects a {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}

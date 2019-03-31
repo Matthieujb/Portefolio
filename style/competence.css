@@ -1,0 +1,122 @@
+/**************************/
+/*** COMPETENCES STYLES ***/
+/**************************/
+
+.page-main {
+    display: flex;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.competences{
+    flex:2;
+}
+.competences h1,
+.competences header {
+    margin-bottom: 2rem;
+}
+
+.competences header p{
+    font-size: 1.15rem;
+}
+
+.competences h2,
+.competences p,
+.competences table {
+    margin-bottom: 1.3rem;
+}
+
+.competences table{
+    width: 100%;
+}
+
+.competences th{
+    text-align: left;
+}
+
+.competences .first th{
+    font-family: Montserrat;
+    font-size: .9rem;
+    color: #171717;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.competences tr:not(.first) th {
+    color: #10c9c3;
+    font-weight: bold;
+}
+
+.competences th,
+.competences td {
+    padding: 1.15rem;
+}
+
+.competences tr {
+    border-bottom: .05rem solid #787878;
+}
+.competences tr:last-of-type {
+    border:0;
+}
+.competences tr th:nth-of-type(1),
+.competences tr th:nth-of-type(2),
+.competences tr td:nth-of-type(1) {
+    border-right: .05rem solid #787878;
+}
+
+.blue-star,
+.grey-star {
+    width: 21px;
+    height: 21px;
+    margin-right: 4px;
+    display: inline-block;
+}
+.grey-star {
+    background-image: url(../style/asset/pictos/grey-star.png);
+}
+.blue-star {
+    background-image: url(../style/asset/pictos/blue-star.png);
+}
+
+.page-aside{
+    flex:1;
+    padding-left: 3.15rem;
+    font-size: .95rem;
+}
+
+.page-aside h2{
+    margin-top: .6rem;
+    margin-bottom: 2.15rem;
+}
+
+.page-aside p{
+    line-height: 1.5;
+}
+
+.page-aside .infos p {
+    margin-bottom: .5rem;
+}
+
+.page-aside .infos a:first-of-type {
+    margin-bottom: .5rem;
+}
+
+.page-aside .projects h2 {
+    margin-top: 2.5rem;
+}
+
+.page-aside .projects h3 {
+    color: #10c9c3;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.page-aside .projects a {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
